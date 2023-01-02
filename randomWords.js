@@ -22,7 +22,8 @@ const words = [
 
 const randomWords = (words, value) => {
   const index = words.indexOf(value);
-  words[index] ? [index, value] : `Brak "${value}" w tablicy.`;
+  return words[index] ? [index, value] : `Brak "${value}" w tablicy.`;
 };
 
-randomWords(words, "Eaa");
+// console.log(randomWords(words, "Ewa"));
+randomWords(words, "Ewa");
